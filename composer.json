@@ -1,5 +1,5 @@
 {
-    "name": "hakimassouane2/packative-tierprice-plugin",
+    "name": "packative/tierprice-plugin",
     "type": "sylius-plugin",
     "description": "A plugin that allows to add tierprices to Sylius",
     "license": "MIT",
