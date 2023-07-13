@@ -10,6 +10,13 @@
         <td>
             {{ form_widget(tierprice.channel) }}
             <div class="field priceField">
+                {{ form_widget(tierprice.original_price, {currency: channel.baseCurrency|default('USD')}) }}
+                {{ form_errors(tierprice.original_price) }}
+            </div>
+        </td>
+        <td>
+            {{ form_widget(tierprice.channel) }}
+            <div class="field priceField">
                 {{ form_widget(tierprice.price, {currency: channel.baseCurrency|default('USD')}) }}
                 {{ form_errors(tierprice.price) }}
             </div>
@@ -66,6 +73,7 @@
                 <thead>
                 <tr>
                     <th class="table-column-quantity">{{ 'sylius.ui.quantity'|trans }}</th>
+                    <th>{{ 'sylius.ui.unit_original_price'|trans }} </th>
                     <th>{{ 'sylius.ui.unit_price'|trans }} </th>
                     <th>{{ 'brille24_tier_price.ui.customer_group'|trans }} </th>
                     <th>{{ 'sylius.ui.delete'|trans }}</th>
