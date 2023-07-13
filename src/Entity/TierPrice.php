@@ -84,7 +84,7 @@ class TierPrice implements TierPriceInterface
 
     public function setOriginalPrice(int $original_price): void
     {
-        $this->price = $original_price;
+        $this->original_price = $original_price;
     }
 
     public function getQty(): int
