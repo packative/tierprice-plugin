@@ -31,7 +31,7 @@ interface TierPriceInterface extends ResourceInterface
 
     public function getOriginalPrice(): int;
 
-    public function setOriginalPrice(int $originalPrice): void;
+    public function setOriginalPrice(int $original_price): void;
 
     public function getQty(): int;
 
