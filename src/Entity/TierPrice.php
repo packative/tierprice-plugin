@@ -55,9 +55,10 @@ class TierPrice implements TierPriceInterface
      */
     private $customerGroup;
 
-    public function __construct(int $quantity = 0, int $price = 0)
+    public function __construct(int $quantity = 0, int $originalPrice = 0, int $price = 0)
     {
         $this->qty   = $quantity;
+        $this->originalPrice = $originalPrice;
         $this->price = $price;
     }
 
