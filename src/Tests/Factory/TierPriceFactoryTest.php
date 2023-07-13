@@ -67,6 +67,7 @@ class TierPriceFactoryTest extends TestCase
         $this->subject->createAtProductVariant($productVariant, [
             'quantity' => 10,
             'channel'  => $channel,
+            'original_price'    => 100,
             'price'    => 100,
         ]);
     }

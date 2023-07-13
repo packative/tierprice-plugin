@@ -43,6 +43,7 @@ final class TierPriceFactory implements TierPriceFactoryInterface
     ): TierPriceInterface {
         Assert::integer($options['quantity']);
         Assert::nullOrIsInstanceOf($options['channel'], ChannelInterface::class);
+        Assert::integer($options['original_price']);
         Assert::integer($options['price']);
 
         /** @var TierPriceInterface $tierPrice */
@@ -50,6 +51,7 @@ final class TierPriceFactory implements TierPriceFactoryInterface
 
         $tierPrice->setQty($options['quantity']);
         $tierPrice->setChannel($options['channel']);
+        $tierPrice->setOriginalPrice($options['original_price']);
         $tierPrice->setPrice($options['price']);
         $tierPrice->setProductVariant($productVariant);
 

@@ -27,6 +27,7 @@ final class TierPriceContext implements Context
     private function createTierPrice(int $quantity, $price): TierPriceInterface
     {
         $tierPrice = new TierPrice($quantity);
+        $tierPrice->setOriginalPrice((int)(floatval($price) * 100));
         $tierPrice->setPrice((int)(floatval($price) * 100));
 
         return $tierPrice;

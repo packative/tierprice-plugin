@@ -63,6 +63,7 @@ class TierPriceExampleFactoryTest extends TestCase
 
         $options = [
             'quantity'        => 10,
+            'original_price'  => 100,
             'price'           => 100,
             'product_variant' => $productVariant,
             'channel'         => $channel,

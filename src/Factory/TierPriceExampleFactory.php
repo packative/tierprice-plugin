@@ -87,6 +87,9 @@ class TierPriceExampleFactory extends AbstractExampleFactory
         $resolver->setDefault('quantity', 1);
         $resolver->setAllowedTypes('quantity', 'integer');
 
+        $resolver->setDefault('original_price', 0);
+        $resolver->setAllowedTypes('original_price', 'integer');
+
         $resolver->setDefault('price', 0);
         $resolver->setAllowedTypes('price', 'integer');
 
