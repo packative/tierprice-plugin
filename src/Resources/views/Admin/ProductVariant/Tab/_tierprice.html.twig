@@ -8,7 +8,6 @@
             </div>
         </td>
         <td>
-            {{ form_widget(tierprice.channel) }}
             <div class="field priceField">
                 {{ form_widget(tierprice.original_price, {currency: channel.baseCurrency|default('USD')}) }}
                 {{ form_errors(tierprice.original_price) }}
