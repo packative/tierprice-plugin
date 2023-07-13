@@ -33,7 +33,7 @@ class TierPrice implements TierPriceInterface
     /**
      * @var int
      */
-    private $originalPrice;
+    private $original_price;
 
     /**
      * @var int
@@ -55,10 +55,10 @@ class TierPrice implements TierPriceInterface
      */
     private $customerGroup;
 
-    public function __construct(int $quantity = 0, int $originalPrice = 0, int $price = 0)
+    public function __construct(int $quantity = 0, int $original_price = 0, int $price = 0)
     {
         $this->qty   = $quantity;
-        $this->originalPrice = $originalPrice;
+        $this->original_price = $original_price;
         $this->price = $price;
     }
 
@@ -79,12 +79,12 @@ class TierPrice implements TierPriceInterface
 
     public function getOriginalPrice(): int
     {
-        return $this->originalPrice;
+        return $this->original_price;
     }
 
-    public function setOriginalPrice(int $originalPrice): void
+    public function setOriginalPrice(int $original_price): void
     {
-        $this->price = $originalPrice;
+        $this->price = $original_price;
     }
 
     public function getQty(): int
